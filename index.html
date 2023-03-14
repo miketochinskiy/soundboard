@@ -7,25 +7,31 @@
   <link rel="stylesheet" href="./style.css">
 
 </head>
-<body>
+<body class="">
 
   <!-- Keys -->
 <div class="keys">
 
-    <div data-key="65" class="key">
-      <kbd>A</kbd>
-      <span class="sound">clap</span>
+    <div id="birds" data-key="66" class="key">
+      <kbd>B</kbd>
+      <span class="sound">Birds</span>
     </div>
-    <div data-key="83" class="key">
-      <kbd>S</kbd>
-      <span class="sound">hihat</span>
+    <div id="rain" data-key="82" class="key">
+      <kbd>R</kbd>
+      <span class="sound">Rain</span>
     </div>
+    <div id="fire" data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">Fireplace</span>
+    </div>
+
 
 </div>
 
   <!-- Sounds -->
-  <audio data-key="65" src="./sounds/clap.wav"></audio>
-  <audio data-key="83" src="./sounds/hihat.wav"></audio>
+  <audio loop data-key="66" src="./sounds/birds.mp3"></audio>
+  <audio loop data-key="82" src="./sounds/rain.mp3"></audio>
+  <audio loop data-key="70" src="./sounds/fireplace.mp3"></audio>
 
 <!-- JavaScript -->
   <script  src="./script.js"></script>
