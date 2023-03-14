@@ -28,3 +28,29 @@ const playSound = e => {
     window.addEventListener('keydown', playSound);
     window.addEventListener('touchstart', playSound);
     window.addEventListener('click', playSound);
+
+
+
+
+
+
+
+    const body = document.querySelector('body');
+    const birdsButton = document.querySelector('#birds');
+    const rainButton = document.querySelector('#rain');
+    const fireButton = document.querySelector('#fire');
+
+    birdsButton.addEventListener('click', () => {
+      body.classList.remove('rain', 'fire');
+      body.classList.add('birds');
+    });
+
+    rainButton.addEventListener('click', () => {
+      body.classList.remove('birds', 'fire');
+      body.classList.add('rain');
+    });
+
+    fireButton.addEventListener('click', () => {
+      body.classList.remove('birds', 'rain');
+      body.classList.add('fire');
+    });

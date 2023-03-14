@@ -1,7 +1,10 @@
 /* Set Fonts and Resets */
 body,
 html {
-  background: gray;
+ /* background-image: url("https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");*/
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: cover;
   margin: 0;
   overflow-x: hidden;
   padding: 0;
@@ -23,13 +26,14 @@ body {
 kbd {
   display: block;
   font-size: 4rem;
+  color: white;
 }
 
 /* Name of Sound */
 .sound {
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
-  color: #e2e2e2;
+  color: #ffffff;
 }
 
 /* Use CSS Grid to display keys */
@@ -53,7 +57,7 @@ kbd {
   /* Styling of keys */
   width: 10rem;
   text-align: center;
-  outline: 1px solid black;
+  outline: 1px solid white;
   
   /* Change mouse pointer */
   cursor:pointer;
@@ -73,4 +77,17 @@ kbd {
           transform: scale(1.1);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
   background: white;
+}
+
+.birds {
+  background-image: url("https://images.pexels.com/photos/9542697/pexels-photo-9542697.jpeg");
+  
+}
+
+.rain {
+  background-image: url("https://images.pexels.com/photos/975771/pexels-photo-975771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.fire {
+  background-image: url("https://images.unsplash.com/photo-1504470695779-75300268aa0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FtcCUyMGZpcmV8ZW58MHx8MHx8&w=1000&q=80");
 }
